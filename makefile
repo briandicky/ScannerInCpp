@@ -1,5 +1,6 @@
 CC = g++
 CFLAGS = -c -Wall -O2
+CXXFLAGS = $(CFLAGS)
 RM = rm
 FORCE = -f
 LDFLAGS =
@@ -13,7 +14,7 @@ $(EXECUTABLE): $(OBJECTS)
 	$(CC) $(LDFLAGS) $(OBJECTS) -o $@
 
 .cpp.o:
-	$(CC) $(CFLAGS) $< -o $@
+	$(CC) $(CXXFLAGS) $< -o $@
 
 dep:
 	$(CC) -M *.cpp > .depend
