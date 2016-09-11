@@ -20,4 +20,4 @@ dep:
 	$(CC) -M *.cpp > .depend
 
 clean:
-	$(RM) $(FORCE) $(OBJECTS) $(EXECUTABLE) 
+	$(RM) $(FORCE) $(OBJECTS) $(EXECUTABLE) .depend
